@@ -1,0 +1,88 @@
+<html>
+<head>
+  <title>Statisticator</title>
+  <script src="jquery-2.0.3.min.js"></script>
+  <script src="jstat-1.0.0.min.js"></script>
+  <script src="statisticator.js"></script>
+  <link rel="stylesheet" href="statisticator.css" />
+</head>
+<body>
+
+<h1>&exist;&#8339;&isin; &lang; statisticator &rang;</h1>
+
+<form class="widget" id="population">
+  <h2>Population size</h2>
+  <div>
+    <label>
+      Confidence Level
+      <span>How sure we want to be on the result?</span>
+    </label>
+    <input type="radio" name="population-confidence" value="95" /> 95%
+    <input type="radio" name="population-confidence" value="97" checked /> 97%
+    <input type="radio" name="population-confidence" value="99" /> 99%
+    
+    <label>
+      Margin of Error
+      <span>How precise the result should be?</span>
+    </label>
+    <select name="population-margin" >
+      <option value="0.1">0.1%</option>
+      <option value="0.5">0.5%</option>
+      <option value="1" selected>1%</option>
+      <option value="2" >2%</option>
+      <option value="3" >3%</option>
+    </select>
+    
+    <label>
+      Population size
+      <span>How many people in the real population?</span>
+    </label>
+    <input type="text" name="population-size" value="3000000" />
+    
+    <div class="result-box">
+      Result = 
+      <span class="result"></span>
+    </div>
+  </div>
+</form>
+
+<form class="widget" id="absignificance">
+  <h2>A/B Significance</h2>
+  <div>
+    <label>
+      A Size
+      <span>How many people in the A group?</span>
+    </label>
+    <input type="text" name="absignificance-asize" value="" />
+    
+    <label>
+      A Conversions
+      <span>How many people reached the goal?</span>
+    </label>
+    <input type="text" name="absignificance-aconversions" value="" /> <span class="result-apercentage"></span>
+    
+    <label>
+      B Size
+      <span>How many people in the B group?</span>
+    </label>
+    <input type="text" name="absignificance-bsize" value="" />
+    
+    <label>
+      B Conversions
+      <span>How many people reached the goal?</span>
+    </label>
+    <input type="text" name="absignificance-bconversions" value="" /> <span class="result-bpercentage"></span>
+    
+    <div class="result-box">
+      Result = 
+      <span class="result"></span>
+    </div>
+    <div class="result-box">
+      Significance = 
+      <span class="result-significance"></span>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>

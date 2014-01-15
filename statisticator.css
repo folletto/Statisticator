@@ -1,0 +1,83 @@
+/****************************************************************************************************
+ * 
+ * CSS for Statisticator site
+ *
+ */
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin: 60px 0 0;
+  padding: 0;
+  
+  background: #f1f1f1;
+}
+
+h1 {
+  background: #1e8cbe;
+  height: 46px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  -webkit-box-shadow: inset 0 -1px rgba(0, 86, 132, 0.8), 0 1px 3px rgba(0, 86, 132, 0.4);
+  -moz-box-shadow: inset 0 -1px 0 rgba(0, 86, 132, 0.8), 0 1px 3px rgba(0, 86, 132, 0.4);
+  box-shadow: inset 0 -1px 0 rgba(0, 86, 132, 0.8), 0 1px 3px rgba(0, 86, 132, 0.4);
+  
+  padding: 0;
+  margin: 0;
+  
+  color: #ffffff;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+
+.widget {
+  margin: 0 auto;
+  width: 320px;
+  
+  clear: both;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 0 20px 12px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.075);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.075);
+  
+  font-size: 0.9em;
+}
+
+.widget h2 {
+  margin: 18px 0;
+}
+
+.widget label {
+  display: block;
+  margin: 20px 0 5px;
+  
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #555555;
+}
+
+.widget label span {
+  display: block;
+  font-size: 0.7em;
+  
+  text-transform: none;
+  font-weight: 400;
+}
+
+.widget .result-box {
+  margin: 10px 0 5px;
+  text-align: right;
+  color: #cccccc;
+}
+
+.widget .result-box span {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #1e8cbe;
+}
