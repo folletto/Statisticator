@@ -15,7 +15,7 @@ USAGE
 LICENSE
 -------
 
-  _Copyright (C) 2014, Davide Casali_  
+  _Copyright (C) 2014, Erin Casali_  
   _Licensed under **GPLv3 License**_
 
 > _Great things are not done by impulse,   
